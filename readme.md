@@ -7,7 +7,7 @@ add to .env
 
 in console:
 
-    php artisan install
+    composer install
     php artisan migrate
     php artisan import:items
 
