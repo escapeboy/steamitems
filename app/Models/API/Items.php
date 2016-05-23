@@ -10,7 +10,7 @@ class Items
 
     public function __construct(){
     	if(!env('CS_API_KEY')){
-    		throw new Exception("No CS API KEY provided!", 1);
+    		throw new \Exception("No CS API KEY provided!", 1);
     	}
     	$this->url = $this->url.'?'.http_build_query(['key' => env('CS_API_KEY'), 'language' => 'en']);
 
